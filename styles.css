@@ -43,7 +43,7 @@ a.active, a:hover{
 }
 .checkbtn{
     color: whitesmoke;
-    font-size: 17px;
+    font-size: 20px;
     float: right;
     margin: 0px 12px;
     line-height: 80px;
@@ -99,6 +99,10 @@ h1{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(./pexels-pragyan-bezbaruah-1720186.jpg);
     background-size: cover;
     height: calc(100vh - 80px);
+    width: 100vw;
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 
 
