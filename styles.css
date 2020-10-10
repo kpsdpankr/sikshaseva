@@ -7,8 +7,11 @@
 }
 body{
     font-family: sans-serif;
+    padding left: 5px;
 }
 nav{
+    position: sticky;
+    top: 0%;
     background: #0082e6;
     height: 80px;
     width: 100%;
@@ -17,7 +20,7 @@ label.logo{
     color: whitesmoke;
     font-size: 35px;
     line-height: 80px;
-    padding: 0 20px;
+    padding: 0 5px;
     font-weight: bold;
 }
 nav ul{
@@ -95,16 +98,31 @@ a.active, a:hover{
         left: 0;
     }
 }
-h1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(./pexels-pragyan-bezbaruah-1720186.jpg);
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(./images/choice2.jpg);
     background-size: cover;
-    height: calc(100vh - 80px);
+    height: calc(60vh - 80px);
     width: 100vw;
     background-position: center;
-    background-attachment: fixed;
-    
+    background-attachment: ;
+    display: flex;
 }
-
+/* .hero-text{
+    text-align: left;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    max-lines: ;
+    color: white;
+} */
+.hero-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background: rgba(255, 0, 242, 0.575);
+}
 
 
 
