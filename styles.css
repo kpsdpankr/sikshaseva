@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100, 200, 300, 400, 500, 600, 700, 800, 900');
 *{
     padding: 0;
     margin: 0;
@@ -116,14 +117,103 @@ a.active, a:hover{
     max-lines: ;
     color: white;
 } */
-.hero-text{
+/* .hero-text{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40vh;
     background: rgba(255, 0, 242, 0.575);
+} */
+
+.box-shadow{
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background: #060c21;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    position: ;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
 }
 
+.container .box{
+    /* position: relative;
+    height: 400px;
+    background: #060c21;
+    display: flex; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    box-shadow: 10px 10px 10px 0 ;
+}
+.container .box:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg,2deg);
+    z-index: -1;
+}
+.content{
+    position: ;
+    padding: 20px;
+}
+.box .content h2{
+    position: ;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+.box:hover .content h2{
+    top: -40px
+}
+.box .content h3{
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: 500;
+    color: #fff;
+}
+.box .content p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 12px;
+}
+.box .content a{
+    position: relative;
+    margin: 5px;
+    padding: 04px 10px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: ;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+.box:hover .content a{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
 
-
+.box .content a:hover{
+    background: #fff;
+    color: black;
+}
 
