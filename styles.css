@@ -6,10 +6,14 @@
     list-style: none;
     box-sizing: border-box;
 }
+.msf-logo .gh{
+    
+}
 body{
     font-family: sans-serif;
     padding left: 5px;
 }
+
 nav{
     position: sticky;
     top: 0%;
@@ -225,6 +229,7 @@ a.active, a:hover{
 }
 
 .social{
+    top: 200px;
     position: fixed;
     height: 100vh;
     display: flex;
@@ -274,3 +279,63 @@ a.active, a:hover{
 /* .social a:nth-child(4) i{
     color: #F80000;
 } */
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.board{
+    width: 20%;
+    background: #fff;
+    border: 1px solid rgb(192, 191, 191);
+    border-radius: 9px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+.header{
+    text-align: center;
+    line-height: 160px;
+    height: 200px;
+    padding: 40px 10px;
+    background: linear-gradient(to right,#637bd3, #f84f4f);
+    background-image: url(./images/pexels-rebecca-zaal-764681.jpg);
+    background-size: cover;
+    color: #b60e0e;
+}
+.body{
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.body .btn{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #637bd3, #f84f4f);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+.board:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width:1000px){
+    .board{
+        width: 40%;
+    }
+}
+@media screen and (max-width:620px){
+    .header{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .board{
+        width: 80%;
+    }
+}
+
+
+
+
